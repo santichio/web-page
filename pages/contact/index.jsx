@@ -102,13 +102,13 @@ function Contact() {
                 </div>
             </StyledLink>
             <StyledSocial>
-                <a>
+                <a href="https://github.com/santichio">
                     <SVG src="./icons/github.svg"/>
                 </a>
-                <a>
+                <a href="https://instagram.com/santich.io">
                     <SVG src="./icons/instagram.svg"/>
                 </a>
-                <a>
+                <a href="https://x.com/gfsantichio">
                     <SVG src="./icons/twitter.svg"/>
                 </a>
             </StyledSocial>

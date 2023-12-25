@@ -14,20 +14,20 @@ const pixel = VT323({
 const GlobalStyle = createGlobalStyle`
     ${reset}
 
-    html {
+    body {
         font-family: ${pixel.style.fontFamily};
         background-color: ${theme.color.bg};
     }
 
-    #__next {
+    /* #__next {
         width: 100vw;
-        /* height: 100vh; */
+        height: 100vh;
         display: flex;
 
         @media ${device.mobile} {
             flex-direction: column;
         }
-    }
+    } */
 `
 
 export default GlobalStyle
