@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 import reset from "./reset";
-import { Hind } from 'next/font/google'
+import { VT323 } from 'next/font/google'
 import { device, theme } from "./theme";
 
-const hind = Hind({
-    weight: ['400', '600', '700'],
+const pixel = VT323({
+    weight: '400',
     style: ['normal'],
     subsets: ['latin'],
     display: 'swap'
@@ -14,14 +14,14 @@ const hind = Hind({
 const GlobalStyle = createGlobalStyle`
     ${reset}
 
-    body {
-        font-family: ${hind.style.fontFamily};
-        background-color: ${theme.colors.background.bg1};
+    html {
+        font-family: ${pixel.style.fontFamily};
+        background-color: ${theme.color.bg};
     }
 
     #__next {
         width: 100vw;
-        height: 100vh;
+        /* height: 100vh; */
         display: flex;
 
         @media ${device.mobile} {
